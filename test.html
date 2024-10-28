@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractive Tour Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background for contrast */
+        }
+        .tour-card {
+            border: none; /* No border */
+            border-radius: 10px; /* Rounded corners */
+            overflow: hidden; /* Hide overflow */
+            transition: transform 0.3s; /* Smooth hover effect */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+        }
+        .tour-card:hover {
+            transform: scale(1.05); /* Slightly enlarge card on hover */
+        }
+        .card-img-top {
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+        .card-title {
+            color: #ff5722; /* Tour title color */
+        }
+        .book-now {
+            background-color: #ff5722; /* Button color */
+            color: #fff; /* Button text color */
+            border: none; /* No border */
+        }
+        .book-now:hover {
+            background-color: #e64a19; /* Darker shade on hover */
+        }
+        .card-text {
+            color: #6c757d; /* Subtitle color */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Explore Our Tour Packages</h2>
+    <div class="row">
+
+        <!-- Tour Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card tour-card">
+                <img src="path/to/your-image.jpg" class="card-img-top" alt="Tour Image"> <!-- Replace with your image path -->
+                <div class="card-body">
+                    <h5 class="card-title">Jaisalmer Desert Safari</h5>
+                    <p class="card-text">Experience an unforgettable night under the stars with a thrilling desert safari.</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fas fa-clock"></i> 3 Days</li>
+                        <li class="list-inline-item"><i class="fas fa-users"></i> 2-10 People</li>
+                        <li class="list-inline-item"><i class="fas fa-star"></i> ★★★★☆</li>
+                    </ul>
+                    <a href="tour-details.html" class="btn book-now">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap JavaScript and FontAwesome for icons -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

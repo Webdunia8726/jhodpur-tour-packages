@@ -1,0 +1,260 @@
+/* top header */
+.top-header {
+    background-color:white; /* Royal Blue */
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  .top-header a {
+    color: black;
+    text-decoration: none;
+  }
+
+   /* Navbar styling */
+   .navbar {
+    background-color: #264653; /* Royal Blue */
+    font-family: 'Playfair Display', serif; /* Royal, elegant font */
+    padding: 10px 20px;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E9C46A; /* Sandy Beige */
+  }
+  .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #F4A261; /* Deep Orange on hover */
+  }
+  .sticky-top {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for stickiness */
+  }
+
+  /* hero section */
+  /* Full-screen responsive video styling for desktop */
+  .hero-section {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Video styling for desktop */
+  .carousel-item video {
+    width: 100%;
+
+    object-fit: cover;
+  }
+
+
+  /* about jhodpur */
+
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.about-slider {
+    width: 50%; /* Adjust the width as needed */
+    max-width: 600px; /* Limit max width for larger screens */
+}
+
+.about-slider img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.about-text {
+    width: 50%; /* Adjust the width as needed */
+    padding-left: 20px; /* Space between text and image */
+}
+
+.about-text h2 {
+    color: #3c6e71; /* Attractive heading color */
+    font-size: 2rem; /* Adjust font size */
+}
+
+.about-text p {
+    color: #2a475e; /* Text color */
+    font-size: 1.2rem; /* Font size for readability */
+}
+
+.button-group {
+    margin-top: 20px; /* Space above buttons */
+}
+
+.button-group .btn {
+    margin-right: 10px; /* Space between buttons */
+
+    align-items: center;
+}
+
+.button-group .btn i {
+    margin-right: 5px; /* Space between icon and text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Stack the slider and text vertically */
+        align-items: center; /* Center items */
+    }
+    .about-slider, .about-text {
+        width: 100%; /* Full width on small screens */
+        padding: 0; /* Remove padding */
+    }
+    .about-text {
+        padding-top: 20px; /* Space between slider and text */
+    }
+}
+
+/* jhodpur cta */
+
+.cta-section {
+    background-image: url('jodhpur_background.jpg'); /* Replace with your image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background */
+    position: relative; /* For positioning the overlay */
+    height: 60vh; /* Adjust height as needed */
+    display: flex; /* Flexbox for centering content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    color: white; /* Text color */
+    overflow: hidden; /* Hide overflow */
+}
+
+.cta-content {
+    position: relative; /* For content positioning */
+    z-index: 1; /* Ensure text is above the background */
+}
+
+.cta-overlay {
+    position: absolute; /* Overlay for background dimming */
+    top: 0; /* Position overlay */
+    left: 0; /* Position overlay */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 0; /* Below the text */
+}
+
+/* Responsive text styling */
+h2 {
+    font-size: 2.5rem; /* Heading size */
+}
+
+p {
+    font-size: 1.2rem; /* Paragraph size */
+}
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem; /* Smaller heading size */
+    }
+
+    p {
+        font-size: 1rem; /* Smaller paragraph size */
+    }
+}
+
+.package-section {
+    padding: 60px 20px; /* Padding for the section */
+    background-color: #fff; /* White background for the package section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+.package-title {
+    color: #ff5722; /* Title color */
+    font-size: 2.5rem; /* Title font size */
+    margin-bottom: 20px; /* Space below title */
+}
+.package-details {
+    font-size: 1.5rem; /* Details font size */
+    color: #6c757d; /* Grey color for details */
+    margin-bottom: 30px; /* Space below details */
+}
+.highlight {
+    color: #ff5722; /* Highlight color for key points */
+    font-weight: bold; /* Bold text for emphasis */
+}
+.gallery {
+    margin-top: 20px; /* Space above gallery */
+}
+.gallery img {
+    border-radius: 10px; /* Rounded corners for images */
+    max-height: 200px; /* Limit height for uniformity */
+    object-fit: cover; /* Ensure images cover their area */
+}
+.main-image {
+    border-radius: 10px; /* Rounded corners for the main image */
+    max-height: 600px; /* Limit height for the main image */
+    object-fit: cover; /* Ensure main image covers its area */
+}
+.btn-custom {
+    background-color: #ff5722; /* Button color */
+    color: white; /* Button text color */
+    margin-top: 20px; /* Space above button */
+}
+
+/* itenary */
+
+.itinerary-section {
+    padding: 60px 20px; /* Padding for the section */
+    background-color: #fff; /* White background for the itinerary section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+.itinerary-title {
+    color: #ff5722; /* Title color */
+    font-size: 2.5rem; /* Title font size */
+    margin-bottom: 20px; /* Space below title */
+    text-align: center; /* Center align title */
+}
+.itinerary-day {
+    background-color: #ffe8d6; /* Light background for each day */
+    border-left: 5px solid #ff5722; /* Left border */
+    padding: 20px; /* Padding for day content */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between days */
+}
+.day-title {
+    font-size: 1.5rem; /* Font size for day title */
+    color: #ff5722; /* Color for day title */
+    margin-bottom: 10px; /* Space below day title */
+}
+.day-details {
+    font-size: 1rem; /* Font size for details */
+    color: #333; /* Dark grey for text */
+    margin-bottom: 10px; /* Space below details */
+}
+.day-image {
+    width: 100%; /* Set to full width */
+    height: auto; /* Automatic height */
+    border-radius: 5px; /* Rounded corners for images */
+    margin-top: 10px; /* Space above the image */
+}
+.contact-button {
+    display: block;
+    width: 200px; /* Fixed width for the button */
+    margin: 30px auto; /* Center align the button */
+    background-color: #ff5722; /* Button color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    text-align: center; /* Center align text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from link */
+}
+.contact-button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
