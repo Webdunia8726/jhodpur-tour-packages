@@ -51,6 +51,60 @@
     object-fit: cover;
   }
 
+/* main button */
+.main-heading {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-gradient {
+    display: block; /* Makes buttons stack vertically */
+    width: 100%; /* Full width on smaller screens */
+    margin: 10px 0; /* Margin between buttons */
+    font-size: 1.2rem; /* Button text size */
+    padding: 15px;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    transition: background 0.3s, transform 0.3s; /* Smooth transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Box shadow */
+    font-weight: bold; /* Bold text */
+}
+
+.btn-jodhpur {
+    background: linear-gradient(135deg, #c0392b, #e74c3c); /* Jodhpur button gradient */
+}
+
+.btn-udaipur {
+    background: linear-gradient(135deg, #2980b9, #6dd5ed); /* Udaipur button gradient */
+}
+
+.btn-cab {
+    background: linear-gradient(135deg, #f39c12, #f1c40f); /* Cab Rental button gradient */
+}
+
+.btn-desert {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6); /* Desert Safari button gradient */
+}
+
+/* Hover effects */
+.btn-gradient:hover {
+    transform: translateY(-3px); /* Slightly lift the button */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .btn-gradient {
+        width: auto; /* Allow buttons to take natural width on larger screens */
+        display: inline-block; /* Stack horizontally */
+    }
+}
+
 
   /* about jhodpur */
 
