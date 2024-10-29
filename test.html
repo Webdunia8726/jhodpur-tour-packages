@@ -3,90 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour Packages</title>
+    <title>Why Choose Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f8f9fa; /* Light background for contrast */
-            font-family: 'Arial', sans-serif; /* Modern font */
+            background-color: #f8f9fa; /* Light grey background */
         }
-
-        .main-heading {
-            text-align: center;
-            margin: 40px 0;
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .btn-gradient {
-            display: block; /* Makes buttons stack vertically */
-            width: 100%; /* Full width on smaller screens */
-            margin: 10px 0; /* Margin between buttons */
-            font-size: 1.2rem; /* Button text size */
-            padding: 15px;
-            border: none;
-            border-radius: 10px; /* Rounded corners */
-            color: white; /* Text color */
+        .choose-us-section {
+            padding: 50px 0;
             text-align: center; /* Center text */
-            transition: background 0.3s, transform 0.3s; /* Smooth transition */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Box shadow */
-            font-weight: bold; /* Bold text */
         }
-
-        .btn-jodhpur {
-            background: linear-gradient(135deg, #c0392b, #e74c3c); /* Jodhpur button gradient */
+        .choose-us-card {
+            transition: transform 0.2s;
+            margin: 15px;
+            background-color: #fff; /* White background for cards */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
-        .btn-udaipur {
-            background: linear-gradient(135deg, #2980b9, #6dd5ed); /* Udaipur button gradient */
+        .choose-us-card:hover {
+            transform: translateY(-5px); /* Slight lift on hover */
         }
-
-        .btn-cab {
-            background: linear-gradient(135deg, #f39c12, #f1c40f); /* Cab Rental button gradient */
+        .icon {
+            font-size: 40px; /* Icon size */
+            color: #FF5722; /* Main color for icons */
+            margin-bottom: 15px;
         }
-
-        .btn-desert {
-            background: linear-gradient(135deg, #8e44ad, #9b59b6); /* Desert Safari button gradient */
-        }
-
-        /* Hover effects */
-        .btn-gradient:hover {
-            transform: translateY(-3px); /* Slightly lift the button */
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-        }
-
-        /* Media queries for responsiveness */
-        @media (min-width: 768px) {
-            .btn-gradient {
-                width: auto; /* Allow buttons to take natural width on larger screens */
-                display: inline-block; /* Stack horizontally */
-            }
+        h2 {
+            margin-bottom: 30px;
+            color: #333; /* Darker color for heading */
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1 class="main-heading">Explore Our Main Services</h1> <!-- Main heading -->
+<div class="container choose-us-section">
+    <h2>Why Choose Us?</h2>
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card choose-us-card">
+                <div class="card-body text-center">
+                    <div class="icon">
+                        <i class="fas fa-star"></i> <!-- Font Awesome star icon -->
+                    </div>
+                    <h5 class="card-title">Top Quality Service</h5>
+                    <p class="card-text">We provide exceptional services that ensure a memorable experience.</p>
+                </div>
+            </div>
+        </div>
 
-    <div class="row text-center">
-        <div class="col-12 col-md-3">
-            <a href="#jodhpur-packages" class="btn btn-gradient btn-jodhpur">Jodhpur Tour Packages</a>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card choose-us-card">
+                <div class="card-body text-center">
+                    <div class="icon">
+                        <i class="fas fa-users"></i> <!-- Font Awesome users icon -->
+                    </div>
+                    <h5 class="card-title">Experienced Team</h5>
+                    <p class="card-text">Our team of professionals is dedicated to making your trip unforgettable.</p>
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-md-3">
-            <a href="#udaipur-packages" class="btn btn-gradient btn-udaipur">Udaipur Tour Packages</a>
-        </div>
-        <div class="col-12 col-md-3">
-            <a href="#cab-rental" class="btn btn-gradient btn-cab">Cab Rental</a>
-        </div>
-        <div class="col-12 col-md-3">
-            <a href="#desert-safari" class="btn btn-gradient btn-desert">Desert Safari</a>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card choose-us-card">
+                <div class="card-body text-center">
+                    <div class="icon">
+                        <i class="fas fa-check-circle"></i> <!-- Font Awesome check circle icon -->
+                    </div>
+                    <h5 class="card-title">Reliable & Trustworthy</h5>
+                    <p class="card-text">Count on us for safe and reliable services throughout your journey.</p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- Bootstrap JavaScript -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome CDN -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
