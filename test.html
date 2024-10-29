@@ -3,84 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why Choose Us</title>
+    <title>Call to Action Section</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            background-color: #f8f9fa; /* Light grey background */
+        /* CTA Section Styling */
+        .cta-section {
+            background-image: url('your-image.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 80px 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
         }
-        .choose-us-section {
-            padding: 50px 0;
-            text-align: center; /* Center text */
+        
+        /* Overlay */
+        .cta-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1;
         }
-        .choose-us-card {
-            transition: transform 0.2s;
-            margin: 15px;
-            background-color: #fff; /* White background for cards */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        /* Text and button styling */
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: auto;
         }
-        .choose-us-card:hover {
-            transform: translateY(-5px); /* Slight lift on hover */
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: bold;
         }
-        .icon {
-            font-size: 40px; /* Icon size */
-            color: #FF5722; /* Main color for icons */
-            margin-bottom: 15px;
+
+        .cta-text {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
         }
-        h2 {
-            margin-bottom: 30px;
-            color: #333; /* Darker color for heading */
+
+        .cta-button {
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .cta-title {
+                font-size: 2rem;
+            }
+
+            .cta-text {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                font-size: 1rem;
+                padding: 8px 16px;
+            }
         }
     </style>
 </head>
 <body>
 
-<div class="container choose-us-section">
-    <h2>Why Choose Us?</h2>
-    <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-4">
-            <div class="card choose-us-card">
-                <div class="card-body text-center">
-                    <div class="icon">
-                        <i class="fas fa-star"></i> <!-- Font Awesome star icon -->
-                    </div>
-                    <h5 class="card-title">Top Quality Service</h5>
-                    <p class="card-text">We provide exceptional services that ensure a memorable experience.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-md-4">
-            <div class="card choose-us-card">
-                <div class="card-body text-center">
-                    <div class="icon">
-                        <i class="fas fa-users"></i> <!-- Font Awesome users icon -->
-                    </div>
-                    <h5 class="card-title">Experienced Team</h5>
-                    <p class="card-text">Our team of professionals is dedicated to making your trip unforgettable.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-md-4">
-            <div class="card choose-us-card">
-                <div class="card-body text-center">
-                    <div class="icon">
-                        <i class="fas fa-check-circle"></i> <!-- Font Awesome check circle icon -->
-                    </div>
-                    <h5 class="card-title">Reliable & Trustworthy</h5>
-                    <p class="card-text">Count on us for safe and reliable services throughout your journey.</p>
-                </div>
-            </div>
-        </div>
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="cta-content">
+        <h2 class="cta-title">Ready for Your Next Adventure?</h2>
+        <p class="cta-text">Discover the beauty of Jodhpur and beyond with our exclusive packages.</p>
+        <a href="#contact" class="btn btn-primary cta-button">Contact Us</a>
+        <a href="#packages" class="btn btn-outline-light cta-button">Explore Packages</a>
     </div>
-</div>
+</section>
 
-<script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome CDN -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
