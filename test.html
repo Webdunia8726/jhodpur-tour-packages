@@ -3,87 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Call to Action Section</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Why Choose Our Tour and Travels Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
-        /* CTA Section Styling */
-        .cta-section {
-            background-image: url('your-image.jpg'); /* Replace with your background image */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            padding: 80px 20px;
-            color: white;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        /* Overlay */
-        .cta-section::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-            z-index: 1;
+        .why-choose-us {
+            position: relative; /* To position the pseudo-element */
+            background-image: url('/images/cab-rental.webp'); /* Replace with your image path */
+            background-size: cover; /* Cover the entire section */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Fixed background image */
+            color: white; /* Text color */
+            padding: 60px 0; /* Padding for top and bottom */
+            text-align: center; /* Center align text */
         }
 
-        /* Text and button styling */
-        .cta-content {
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
-            margin: auto;
+        .why-choose-us::before {
+            content: ""; /* Required for pseudo-element */
+            position: absolute; /* Positioning it absolutely */
+            top: 0; /* Top position */
+            left: 0; /* Left position */
+            right: 0; /* Right position */
+            bottom: 0; /* Bottom position */
+            background-color: rgba(0, 0, 0, 0.5); /* Black filter with opacity */
+            z-index: 1; /* Ensure it's behind the text */
         }
 
-        .cta-title {
-            font-size: 2.5rem;
-            font-weight: bold;
+        .why-choose-us h2 {
+            margin-bottom: 30px; /* Margin for bottom */
+            font-size: 2.5rem; /* Font size for the heading */
+            font-weight: bold; /* Bold text */
+            position: relative; /* To position above the filter */
+            z-index: 2; /* Ensure it's above the filter */
         }
 
-        .cta-text {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
+        .card {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent card background */
+            border: none; /* Remove card border */
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.3s; /* Animation for hover */
+            margin: 20px 0; /* Margin for top and bottom */
+            position: relative; /* To ensure cards are above the background */
+            z-index: 2; /* Ensure cards are above the filter */
         }
 
-        .cta-button {
-            font-size: 1.1rem;
-            padding: 10px 20px;
-            border-radius: 25px;
+        .card:hover {
+            transform: scale(1.05); /* Scale effect on hover */
         }
 
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .cta-title {
-                font-size: 2rem;
-            }
+        .icon {
+            font-size: 2.5rem; /* Icon size */
+            color: #007bff !important; /* Icon color */
+            margin-bottom: 15px; /* Margin for bottom */
+        }
 
-            .cta-text {
-                font-size: 1rem;
-            }
+        .card-title {
+            font-size: 1.5rem; /* Title font size */
+            font-weight: bold; /* Title bold */
+        }
 
-            .cta-button {
-                font-size: 1rem;
-                padding: 8px 16px;
-            }
+        .card-text {
+            font-size: 1rem; /* Text font size */
         }
     </style>
 </head>
 <body>
 
-<!-- CTA Section -->
-<section class="cta-section">
-    <div class="cta-content">
-        <h2 class="cta-title">Ready for Your Next Adventure?</h2>
-        <p class="cta-text">Discover the beauty of Jodhpur and beyond with our exclusive packages.</p>
-        <a href="#contact" class="btn btn-primary cta-button">Contact Us</a>
-        <a href="#packages" class="btn btn-outline-light cta-button">Explore Packages</a>
-    </div>
-</section>
+<div class="why-choose-us">
+    <h2>Why Choose Our Tour and Travels Agency</h2>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container">
+        <div class="row">
+            <!-- Card 1: Experienced Guides -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <i class="fas fa-user-tie icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Experienced Guides</h5>
+                        <p class="card-text">Our knowledgeable guides provide you with insights and information about every destination.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Customized Itineraries -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <i class="fas fa-clipboard-list icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">Customized Itineraries</h5>
+                        <p class="card-text">We design personalized travel itineraries to suit your preferences and budget.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: 24/7 Support -->
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <i class="fas fa-headset icon"></i>
+                    <div class="card-body">
+                        <h5 class="card-title">24/7 Support</h5>
+                        <p class="card-text">Our support team is available round the clock to assist you with any queries or issues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
