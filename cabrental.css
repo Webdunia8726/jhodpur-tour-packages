@@ -1,0 +1,141 @@
+
+/* top header */
+.top-header {
+    background-color:white; /* Royal Blue */
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  .top-header a {
+    color: black;
+    text-decoration: none;
+  }
+
+   /* Navbar styling */
+   .navbar {
+    background-color: #264653; /* Royal Blue */
+    font-family: 'Playfair Display', serif; /* Royal, elegant font */
+    padding: 10px 20px;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E9C46A; /* Sandy Beige */
+  }
+  .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #F4A261; /* Deep Orange on hover */
+  }
+  .sticky-top {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for stickiness */
+  }
+
+    
+    
+    
+    
+    /* foooter */
+
+/* Footer Section Styling */
+.footer-section {
+    background-color: #2c3e50;
+    color: #f1f1f1;
+    padding: 2rem 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-align: left;
+
+}
+
+.footer-about, .footer-links, .footer-contact, .footer-social {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-about h3, .footer-links h3, .footer-contact h3, .footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f39c12;
+}
+
+/* Footer Links Styling */
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: #f1f1f1 !important;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.footer-links ul li a:hover {
+    color: #f39c12;
+}
+
+/* Contact Info Icons */
+.footer-contact p {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white !important;
+}
+
+.footer-contact i {
+    color: #f39c12;
+}
+
+/* Social Media Icons */
+.footer-social .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-social .social-icons a {
+    color: #f1f1f1;
+    font-size: 1.5rem;
+}
+
+.footer-social .social-icons a:hover {
+    color: #f39c12;
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #444;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+
+    }
+
+    .footer-about, .footer-links, .footer-contact, .footer-social {
+        margin-bottom: 1.5rem;
+    }
+}
+
