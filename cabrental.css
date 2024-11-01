@@ -1,4 +1,45 @@
 
+p {
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    font-size: 14px;               /* Font size */
+
+    line-height: 1.6;              /* Spacing between lines */
+    letter-spacing: 0.5px;         /* Slightly increase space between letters */
+    margin: 15px 0;                /* Space above and below paragraphs */
+}
+
+.carousel-item img{
+    height: 600px;
+}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .carousel-caption h5,
+  .carousel-caption p {
+    font-size: 1.2rem; /* Adjust text size */
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-caption h5 {
+      font-size: 1rem;
+    }
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+    .carousel-item img{
+        height: 300px;
+    }
+  }
+  
 /* top header */
 .top-header {
     background-color:white; /* Royal Blue */
@@ -36,8 +77,284 @@
 
     
     
-    
-    
+    /* about us */
+
+    .about-section {
+        background-color: #f9f9f9;
+      }
+      
+      .about-section h2 {
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      
+      .about-section p {
+        font-size: 18px;
+        color: #555;
+        line-height: 1.6;
+      }
+   
+      
+      /* features section */
+
+      /* Section Styling */
+.features-section {
+    position: relative;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .fixed-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/cabimg/cabbg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+
+    filter: blur(4px);
+  }
+  
+  .feature-box {
+
+    border-radius: 10px;
+
+}
+  
+  .feature-box h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-box p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* cab collection */
+
+  .cab-collections {
+    background-color: #f9f9f9;
+  }
+  
+  .cab-collections h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .card {
+    border: none;
+    transition: transform 0.3s;
+
+}
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+.btnbook2{
+    background-color: #264653;
+    color: white !important;
+}
+.btnbook2:hover{
+    background-color: #376172;
+}
+
+  
+  /* why choose us */
+  .why-choose-us {
+    background-color: #f9f9f9;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .why-choose-us .fas{
+    color:#264653;
+  }
+  
+  .card {
+    border: none;
+    transition: transform 0.3s;
+  }
+
+  .card img{
+    padding: 20px;
+    border-radius: 20px !important;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .btn-primary {
+    background-color: #264653;
+    padding: 10px;
+
+}
+  .rating .fa-star{
+color: #f39c12;
+  }
+
+  /* reviews
+   */
+   
+.my-custom-carousel .my-carousel-item {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 5px;
+    background-color: #f8f8f8;
+  }
+  .my-review-card img.my-review-img {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  
+  .my-review-card img.my-review-img2 {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    margin-top: 50px;
+  margin-left: -25px;
+  }
+  
+  .my-review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  .my-review-name {
+    font-weight: bold;
+    margin-left: 12px;
+  }
+  .my-review-verified {
+    color: #3498db;
+    margin-left: 6px;
+  }
+  .my-review-date {
+    font-size: 13px;
+    color: #7f8c8d;
+    margin-left: 10px;
+  }
+  .my-review-rating {
+    color: #fcbf02;
+    margin: 12px 0;
+  }
+  .my-review-text {
+    font-size: 16px;
+  }
+  
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .my-custom-carousel .my-carousel-item {
+      padding: 15px;
+    }
+    .my-review-card img.my-review-img {
+      width: 60px;
+      height: 60px;
+    }
+    .my-review-text {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 576px) {
+    .my-custom-carousel .my-carousel-item {
+      padding: 10px;
+    }
+    .my-review-card img.my-review-img {
+      width: 50px;
+      height: 50px;
+    }
+    .my-review-text {
+      font-size: 13px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
+      .googlereview {
+          text-align: center;
+      }
+      .star-rating {
+  font-size: 15px;
+      }
+  }
+  
+  .googlelogofull {
+      width: 100px;
+      height: 40px;
+      margin-right: 10px;
+  }
+  
+  .googlereview {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .star-rating {
+      margin-left: 10px;
+  }
+  
+  .btn-center {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+  }
+  
+  
+  .bgreviews{
+    background-color:#f8f8f8 ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+  }
+  
+  
+  
     /* foooter */
 
 /* Footer Section Styling */
@@ -139,3 +456,38 @@
     }
 }
 
+
+
+
+
+
+/* Base style for h1 */
+h1 {
+    font-size: 2.5rem; /* Default font size for desktop */
+    font-weight: bold;
+    color: #264653; /* Customize color as desired */
+    text-align: center; /* Centers the text */
+    margin: 20px 0; /* Adds top and bottom spacing */
+  }
+  
+  /* Medium screens (tablets, small desktops) */
+  @media (max-width: 992px) {
+    h1 {
+      font-size: 2rem; /* Slightly smaller for medium screens */
+    }
+  }
+  
+  /* Small screens (landscape phones, portrait tablets) */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem; /* Further reduce size for small screens */
+    }
+  }
+  
+  /* Extra small screens (phones) */
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.5rem; /* Smallest size for very small screens */
+    }
+  }
+  
