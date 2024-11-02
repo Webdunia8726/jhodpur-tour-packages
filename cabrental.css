@@ -491,3 +491,191 @@ h1 {
     }
   }
   
+
+
+
+
+  /*  */
+  #safari-package {
+    padding: 40px;
+    background: #F4EFE2; /* Sand color for desert vibe */
+    text-align: center;
+}
+
+#safari-package h2 {
+    font-size: 2em;
+    color: #B24C27; /* Earthy color */
+    margin-bottom: 10px;
+}
+
+#safari-package p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.package-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Jeep Safari Card */
+.card-jeep-safari {
+    background: #FFEBD6;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.card-jeep-safari:hover {
+    transform: translateY(-10px);
+}
+
+.card-jeep-safari img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.card-jeep-safari h3 {
+    font-size: 1.5em;
+    color: #D35400;
+    margin-top: 10px;
+}
+
+.card-jeep-safari p {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Desert Night Stay Card */
+.card-desert-stay {
+    background: #FFF1CC;
+    border: 2px solid #F9A825;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.card-desert-stay:hover {
+    transform: translateY(-10px);
+}
+
+.card-desert-stay img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.card-desert-stay h3 {
+    font-size: 1.5em;
+    color: #C79100;
+    margin-top: 10px;
+}
+
+.card-desert-stay p {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Camel Safari Card */
+.card-camel-safari {
+    background: #FFF8E7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.card-camel-safari:hover {
+    transform: translateY(-10px);
+}
+
+.card-camel-safari img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.card-camel-safari h3 {
+    font-size: 1.5em;
+    color: #D84315;
+    margin-top: 10px;
+}
+
+.card-camel-safari p {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Unique Button Styling */
+
+/* Jeep Safari Button */
+.contact-jeep-safari-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #D35400;
+    color: #FFF;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-jeep-safari-btn:hover {
+    background-color: #A33E00;
+}
+
+/* Desert Night Stay Button */
+.contact-desert-stay-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #F9A825;
+    color: #FFF;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-desert-stay-btn:hover {
+    background-color: #C79100;
+}
+
+/* Camel Safari Button */
+.contact-camel-safari-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #FF7043;
+    color: #FFF;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-camel-safari-btn:hover {
+    background-color: #D84315;
+}
