@@ -511,7 +511,7 @@ transform: scale(1.1); /* Enlarge on hover */
 
 .why-choose-us {
     position: relative; /* To position the pseudo-element */
-    background-image: url('/images/jhodpur-tour.jpg'); /* Replace with your image path */
+    background-image: url('images/jhodpur-tour.jpg'); /* Replace with your image path */
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the image */
     background-attachment: fixed; /* Fixed background image */
