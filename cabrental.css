@@ -39,7 +39,7 @@ a{
 .hero-section {
   position: relative;
   height: 100vh;
-  background: url('/cabimg/cabbghero.jpg') center/cover no-repeat;
+  background: url('cabimg/cabbghero.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -777,7 +777,7 @@ h1 {
 .safari-hero-section {
   position: relative;
   height: 100vh;
-  background: url('/cabimg/slider-1.jpg') center/cover no-repeat; /* Replace with a desert safari image */
+  background: url('cabimg/slider-1.jpg') center/cover no-repeat; /* Replace with a desert safari image */
   display: flex;
   align-items: center;
   justify-content: center;
