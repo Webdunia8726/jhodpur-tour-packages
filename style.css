@@ -2,6 +2,10 @@ html{
     overflow-x: hidden; /* Prevent horizontal overflow */
 
 }
+.logo{
+
+    height: 50px;
+}
 a{
     text-decoration: none;
 }
@@ -728,13 +732,13 @@ p {
   
   
   .my-review-card img.my-review-img2 {
-    width: 30px !important;
-    height: 30px !important;
+    width: 40px !important;
+    height: 40px !important;
     border-radius: 50%;
     object-fit: cover;
     position: relative;
     margin-top: 50px;
-  margin-left: -25px;
+  margin-left: -40px;
   }
   
   .my-review-header {
@@ -837,4 +841,35 @@ p {
     border-radius: 20px;
   }
   
+  .whatsapp-button, .call-button {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Icon size */
+    color: white; /* Icon color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
   
+  .whatsapp-button {
+    left: 20px; /* Position from the left */
+    background-color: #25D366; /* WhatsApp color */
+  }
+  
+  .call-button {
+    right: 20px; /* Position from the right */
+    background-color: #007bff; /* Call button color */
+  }
+  
+  /* Optional: Add hover effect */
+  .whatsapp-button:hover, .call-button:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+  }
+  a{
+    text-decoration: none;
+  }

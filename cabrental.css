@@ -1,4 +1,93 @@
+.logo{
 
+  height: 50px;
+  width: 100%;
+}
+.whatsapp-button, .call-button {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom */
+  width: 50px; /* Width of the button */
+  height: 50px; /* Height of the button */
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px; /* Icon size */
+  color: white; /* Icon color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.whatsapp-button {
+  left: 20px; /* Position from the left */
+  background-color: #25D366; /* WhatsApp color */
+}
+
+.call-button {
+  right: 20px; /* Position from the right */
+  background-color: #007bff; /* Call button color */
+}
+
+/* Optional: Add hover effect */
+.whatsapp-button:hover, .call-button:hover {
+  opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+a{
+  text-decoration: none;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url('/cabimg/cabbghero.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Darker overlay for clarity */
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #2c3e50;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #e04b00;
+}
 p {
     font-family: 'Georgia', serif; /* Elegant serif font */
     font-size: 14px;               /* Font size */
@@ -161,7 +250,8 @@ p {
   
   .card-title {
     font-size: 1.25rem;
-    color: #333;
+    color: #2c3e50 !important;
+    font-weight: 700;
   }
   
   .card p {
@@ -678,4 +768,61 @@ h1 {
 
 .contact-camel-safari-btn:hover {
     background-color: #D84315;
+}
+
+
+/* desert hero section */
+
+
+.safari-hero-section {
+  position: relative;
+  height: 100vh;
+  background: url('cabimg/slider-1.jpg') center/cover no-repeat; /* Replace with a desert safari image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.safari-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Darker overlay for emphasis */
+}
+
+.safari-hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.safari-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white; /* Gold color for a desert feel */
+}
+
+.safari-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.safari-hero-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #e04b00; /* Desert-inspired color */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.safari-hero-btn:hover {
+  background-color: #ff7e00;
 }
